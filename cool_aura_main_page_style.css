@@ -10,6 +10,7 @@ body {
 }
 
 #title_container {
+    justify-content: center;
     align-self: center;
     align-content: center;
     align-items: center;
@@ -23,10 +24,15 @@ body {
       6px 6px blue,
       -6px -6px rgb(255, 0, 0);
       font-family:  audiowide;
-      font-size: 7vw;
+      font-size: min(7vw, 100px);
     animation-name: opening_animation;
-    animation-duration: 5s;
+    animation-duration: 2s;
     transition: color 2s;
+    display: flex;
+    margin: 0;
+    padding: 0.5px;   
+    min-height: 10px;
+    position: sticky;
 }
 
 @keyframes opening_animation {
@@ -71,4 +77,41 @@ body {
     font-size: 40px;
     font-family: "Tiktok Sans";
     font-weight: 100;
+}
+
+#search {
+    width: 30vw;
+    height: 2.3vh;
+    font-family: 'Tiktok Sans';
+    font-size: 20px;
+    animation-name: search_color;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    font-weight: 400;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+@keyframes search_color {
+    0% {color: red;}
+    33% {color: blue;}
+    66% {color: rgb(0, 255, 34)}
+    100% {color: red}
+}
+
+#searchBox {
+    background-color: rgb(61, 61, 61);
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+
+#searchexecuter {
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    text-shadow: 1px 1px red, -1px -1px blue;
 }
