@@ -1,5 +1,5 @@
 if(localStorage.getItem('browser') === null ) {
-    localStorage.setItem('browser','chrome')
+    localStorage.setItem('searchengine','google')
 }
 
 function search() {
@@ -12,12 +12,15 @@ function search() {
         document.getElementById('search').setAttribute('placeholder','Search Box Cannot Be Empty')
     }
     
-    else if(localStorage.getItem('browser') === 'chrome') {
+    else if(localStorage.getItem('searchengine') === 'google') {
         window.location.href = `https://google.com/search?q=${url}&safe=active&ssui=on`;
     }
 
-    else if(localStorage.getItem('browser') === 'duckduckgo') {
+    else if(localStorage.getItem('searchengine') === 'duckduckgo') {
         window.location.href = `https://duckduckgo.com/?q=${url}&ia=web`;
+
+    else if(localStorage.getItem('searchengine') === 'startpage) {
+        window.location.href = `https://www.startpage.com/sp/search?query=${url}`
     }
 }
 
