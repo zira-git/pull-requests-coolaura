@@ -9,7 +9,7 @@ function search() {
         console.log(url)
         window.location.href = `https://${url}`
     } else if(url === "") {
-        document.getElementById('search').setAttribute('placeholder','Search Box Cannot Be Empty')
+        document.getElementById('search').setAttribute('placeholder','The search bar cannot be empty.')
     }
     
     else if(localStorage.getItem('searchengine') === 'google') {
@@ -19,8 +19,11 @@ function search() {
     else if(localStorage.getItem('searchengine') === 'duckduckgo') {
         window.location.href = `https://duckduckgo.com/?q=${url}&ia=web`;
 
-    else if(localStorage.getItem('searchengine') === 'startpage) {
+    else if(localStorage.getItem('searchengine') === 'startpage') {
         window.location.href = `https://www.startpage.com/sp/search?query=${url}`
+
+    else if(localStorage.getItem('searchengine') === 'vyntr') {
+        window.location.href = `https://vyntr.com/search?q=${url}`
     }
 }
 
