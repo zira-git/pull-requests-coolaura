@@ -43,7 +43,7 @@ function search() {
     }
 }
 
-console.log(localStorage.getItem('searchengine')) // Logs your saved search engine
+console.log(localStorage.getItem('searchengine')) // Logs your current search engine
 
 window.addEventListener("DOMContentLoaded", () => { // Enter key listener
     document.getElementById("search").addEventListener("keydown", function(event) {
