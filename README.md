@@ -1,6 +1,6 @@
 # Cool Aura
 
-## The best new browser homepage with maximum aura.
+## The best new browser homepage with maximum aura. (UNOFFICIAL UPDATES)
 
 ![](./cooler_aura_swagshot.png?raw=true "Swagshot")
 
