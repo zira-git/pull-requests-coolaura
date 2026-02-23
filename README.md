@@ -1,3 +1,7 @@
-# Hello everybody!, I bought a domain named coolaura.ca! 
-## this is basically like a new tab and can search stuff.
-### WARNING: Cool Aura is still in beta and may not work on every browser and there may be bugs.
+# Cool Aura
+
+## The best new homepage with maximum aura.
+
+![](./cool_aura_screenshot_cool.png?raw=true "Aurashot:")
+
+### BETA: Expect bugs.
