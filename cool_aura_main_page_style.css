@@ -137,25 +137,34 @@ cursor: pointer;
 
 #settingsMenu {
 z-index: 1000;
-width: 8vw;
-height: 28vh; /* previous 20vh */
+width: clamp(200px, 15vw, 400px);
+box-sizing: border-box;
+height: auto;
+max-height: 80vh;
+overflow-y: auto;
 padding: 10px;
 color: rgb(255, 255, 255);
 background-color: rgb(37, 37, 37);
 border-radius: 10px;
 position: absolute;
+top: 50px;
+left: 5px;
 font-family: 'Tiktok Sans';
 display: none;
 }
 
 .bar {
-    width: 7vw;
-    height: .1vh;
+    width: 100%;
+    height: 2px;
+    margin: 8px 0;
     background-color: rgb(104, 104, 104);
 }
 
+
 .configs {
     display: grid;
+    place-items: center;
+    margin: 6px auto;
     width: fit-content;
     height: fit-content;
     font-family: 'Audiowide'
