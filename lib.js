@@ -48,7 +48,6 @@ console.log(localStorage.getItem('searchengine')) // Logs your current search en
 window.addEventListener("DOMContentLoaded", () => { // Enter key listener
     document.getElementById("search").addEventListener("keydown", function(event) {
         if (event.key === "Enter") {
-            document.getElementById('search').setAttribute('placeholder','Searching...')
             search();
         }
     });
