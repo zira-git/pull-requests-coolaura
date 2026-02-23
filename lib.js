@@ -6,7 +6,6 @@ function search() {
     let url = document.getElementById("search").value
     if(url.includes('.')) {
         console.log(url)
-        console.log(url)
         window.location.href = `https://${url}`
     } else if(url === "") {
         document.getElementById('search').setAttribute('placeholder','The search bar cannot be empty.')
@@ -38,7 +37,7 @@ function search() {
 
     else if(localStorage.getItem('searchengine') === 'bliptext') {
         window.location.href = `https://bliptext.com/search?q=${url}`
-
+    }
     else if(localStorage.getItem('searchengine') === 'bing') {
         window.location.href = `https://www.bing.com/search?q=${url}`
     }
