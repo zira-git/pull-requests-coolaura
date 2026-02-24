@@ -7,8 +7,10 @@ function search() {
     if(url.includes('.')) {
         console.log(url)
         window.location.href = `https://${url}`
+        return;
     } else if(url === "") { // If the URL is empty it warns that it can't be empty
         document.getElementById('search').setAttribute('placeholder','The search bar cannot be empty.')
+        return;
     }
 
     let encoded = encodeURIComponent(url); // Encodes it to let you use stuff like + , & and more in your query
