@@ -13,41 +13,39 @@ function search() {
         return;
     }
 
-    let encoded = encodeURIComponent(url); // Encodes it to let you use stuff like + , & and more in your query
+     url = encodeURIComponent(url) // Encodes it to let you use stuff like + , & and more in your query              
     
     // Search engines
-    let engine = localStorage.getItem('searchengine');
-
-    if (engine === 'google') {
-        window.location.href = `https://google.com/search?q=${encoded}&safe=active&ssui=on`;
+    if(localStorage.getItem('searchengine') === 'google') {
+        window.location.href = `https://google.com/search?q=${url}&safe=active&ssui=on`;
     }
 
-    else if (engine === 'duckduckgo') {
-        window.location.href = `https://duckduckgo.com/?q=${encoded}&ia=web`;
+    else if(localStorage.getItem('searchengine') === 'duckduckgo') {
+        window.location.href = `https://duckduckgo.com/?q=${url}&ia=web`;
     }
 
-    else if (engine === 'startpage') {
-        window.location.href = `https://www.startpage.com/sp/search?query=${encoded}`;
+    else if(localStorage.getItem('searchengine') === 'startpage') {
+        window.location.href = `https://www.startpage.com/sp/search?query=${url}`;
     }
 
-    else if (engine === 'vyntr') {
-        window.location.href = `https://vyntr.com/search?q=${encoded}`;
+    else if(localStorage.getItem('searchengine') === 'vyntr') {
+        window.location.href = `https://vyntr.com/search?q=${url}`;
     }
 
-    else if (engine === 'brave') {
-        window.location.href = `https://search.brave.com/search?q=${encoded}`;
+    else if(localStorage.getItem('searchengine') === 'brave') {
+        window.location.href = `https://search.brave.com/search?q=${url}`;
     }
 
-    else if (engine === 'yandex') {
-        window.location.href = `https://yandex.com/search/?text=${encoded}`;
+    else if(localStorage.getItem('searchengine') === 'yandex') {
+        window.location.href = `https://yandex.com/search/?text=${url}`;
     }
 
-    else if (engine === 'bliptext') {
-        window.location.href = `https://bliptext.com/search?q=${encoded}`;
+    else if(localStorage.getItem('searchengine') === 'bliptext') {
+        window.location.href = `https://bliptext.com/search?q=${url}`;
     }
 
-    else if (engine === 'bing') {
-        window.location.href = `https://www.bing.com/search?q=${encoded}`;
+    else if(localStorage.getItem('searchengine') === 'bing') {
+        window.location.href = `https://www.bing.com/search?q=${url}`;
     }
 }
 
