@@ -1,5 +1,3 @@
-js:
-
 if(localStorage.getItem('searchengine') === null ) { // If no search engine is selected it will default to DDG
     localStorage.setItem('searchengine','duckduckgo') // Sets search engine to DDG
 }
