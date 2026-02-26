@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -19,57 +22,50 @@
   <link rel="stylesheet" href="cool_aura_main_page_style.css">
   <link rel="icon" type="image/png" href="coolauralogo.png">
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Cool Aura</title>
 </head>
+
 <body>
 
-  <div id="topGap" style="height: 10vh;">
-    <button id="settings" onclick="document.getElementById('settingsMenu').style.display = 'block'">⋮</button>
-  </div>
+<div id="topGap">
+  <button id="settings">⋮</button>
+</div>
 
-  <div id="settingsMenu">
-    <span>Settings</span>
-    <button style="background-color: transparent; border: none;" onclick="document.getElementById('settingsMenu').style.display = 'none'"> ❌</button>
-    <div class="bar"></div>
+<div id="settingsMenu">
+  <span>Settings</span>
+  <button id="closeSettings" class="closeBtn">❌</button>
+  <div class="bar"></div>
 
-    <strong>Search Engine:</strong>
-    <br>
+  <strong>Search Engine:</strong>
+  <br>
 
-    <button class="configs" onclick="localStorage.setItem('searchengine','google')">Google</button>
-    <button class="configs" onclick="localStorage.setItem('searchengine','bing')">Bing</button>
-    <button class="configs" onclick="localStorage.setItem('searchengine','vyntr')">Vyntr</button>
-    <button class="configs" onclick="localStorage.setItem('searchengine','bliptext')">Bliptext</button>
-    <button class="configs" onclick="localStorage.setItem('searchengine','yandex')">Yandex</button>
-    <button class="configs" onclick="localStorage.setItem('searchengine','duckduckgo')">DuckDuckGo</button>
-    <button class="configs" onclick="localStorage.setItem('searchengine','startpage')">Startpage</button>
-    <button class="configs" onclick="localStorage.setItem('searchengine','brave')">Brave</button>
+  <button class="engine-btn configs" data-engine="google">Google</button>
+  <button class="engine-btn configs" data-engine="bing">Bing</button>
+  <button class="engine-btn configs" data-engine="vyntr">Vyntr</button>
+  <button class="engine-btn configs" data-engine="bliptext">Bliptext</button>
+  <button class="engine-btn configs" data-engine="yandex">Yandex</button>
+  <button class="engine-btn configs" data-engine="duckduckgo">DuckDuckGo</button>
+  <button class="engine-btn configs" data-engine="startpage">Startpage</button>
+  <button class="engine-btn configs" data-engine="brave">Brave</button>
 
-    <br><br>
-    <div class="bar"></div>
-  </div>
+  <br><br>
+  <div class="bar"></div>
+</div>
 
-  <div id="title_container">
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <h1 id="mainTitle">Cool Aura</h1>
-  </div>
+<div id="title_container">
+  <h1 id="mainTitle">Cool Aura</h1>
+</div>
 
-  <br><br><br><br>
+<div class="section-spacing">
+  <h1 id="subtitle_text">The homepage with maximum aura.</h1>
+</div>
 
-  <div>
-    <h1 id="subtitle_text">The homepage with maximum aura.</h1>
-  </div>
+<div id="searchBox">
+  <input type="text" autocomplete="off" id="search" placeholder="Search or type a URL">
+  <button id="searchexecuter">⌕</button>
+</div>
 
-  <br><br><br>
-
-  <div id="searchBox">
-    <input type="text" autocomplete="off" id="search" placeholder="Search or type a URL">
-    <button id="searchexecuter" onclick="search()">⌕</button>
-  </div>
-
-  <script src="lib.js" defer></script>
+<script src="lib.js" defer></script>
 
 </body>
 </html>
