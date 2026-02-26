@@ -5,6 +5,6 @@
 ![](./cooler_aura_swagshot.png?raw=true "Swagshot")
 
 - #### These unofficial updates are to: fix, add, or improve stuff from the original Cool Aura
-- #### v0.8.9 (Optimization update)
+- #### v1.0.2 (Swagtimization)
 
 - ###### Original by jaguar_gaming_codes
