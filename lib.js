@@ -22,7 +22,8 @@ const engines = {
     brave: "https://search.brave.com/search?q=",
     yandex: "https://yandex.com/search/?text=",
     bliptext: "https://bliptext.com/search?q=",
-    bing: "https://www.bing.com/search?q="
+    bing: "https://www.bing.com/search?q=",
+    irs: "https://www.irs.gov/site-index-search?search="
 }
 
 // Settings toggle
